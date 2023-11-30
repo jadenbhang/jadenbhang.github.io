@@ -162,13 +162,13 @@ nav ul li.selected a {
 	}
 
 	div.container {
-		max-width: 190vh;
+		max-width: 85em;
 		margin: 0 auto;
 		background-color: rgb(243, 243, 236);
 	}
 
 	div.home-container {
-		max-width: 190vh;
+		max-width: 85em;
 		margin: 0 auto;
 		background-color: rgb(243, 243, 236);
 	}
