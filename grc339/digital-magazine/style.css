@@ -18,69 +18,99 @@ ul {
     font-family: sans-serif;
     padding-bottom: 0.2em;
     font-weight: 800;
-    color: #467b97;
+    color: #ffffff;
 }
 
-nav {
-    padding: .5em;
+header {
+    background-color: #ED1C24;
+    padding: 1em;
+    position: sticky;
+    top: 0;
+}
+
+header img {
+    width: auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 1em;
+    margin: 0;
+    padding-top: 1em;
+}
+
+nav a {
+    font-family: 'ITC Avant Garde Gothic Pro', sans-serif;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 1rem;
+    transition: all 0.3s ease;
 }
 
 a:link,
 a:visited,
 a:active {
-    color: #467b97;
+    color: #ffffff;
     text-decoration: none;
 }
 
 a:hover {
-    color: #464d97;
+    color: #090909;
 }
 
 section.mainstory h2 {
-    color: #467b97;
+    color: #ED1C24;
+    font-family: 'ITC Avant Garde Gothic Pro', sans-serif;
     font-weight: 800;
     font-size: 3em;
     padding: 0.1em 0.5rem 0em;
     }
 
 section.secondary h2 {
-    color: #467b97;
+    color: #ED1C24;
+    font-family: 'ITC Avant Garde Gothic Pro', sans-serif;
     font-weight: 800;
     font-size: 2em;
     padding: 0.1em 0.5rem 0em;
 }
 
 section.tertiary h2 {
-    color: #467b97;
+    color: #ED1C24;
+    font-family: 'ITC Avant Garde Gothic Pro', sans-serif;
     font-weight: 800;
     font-size: 1em;
     padding-top: 0.5em;
     margin: 0.5rem;
-    border-top: 1px solid #467b97;
+    border-top: 1px solid #800b0f;
 }
 
 p {
-    font-family: sans-serif;
+    font-family: 'Futura PT', sans-serif;
     line-height: 1.3em;
     color: #000;
     padding: 0em 0.5em 2em;
 }
 
 h2.mainstory {
-    color: #467b97;
+    color: #ED1C24;
+    font-family: 'ITC Avant Garde Gothic Pro', sans-serif;
     font-weight: 800;
     font-size: 3em;
     padding: 1rem 0.5rem 0.5rem;
     }
 
 h2.mainstory {
-    color: #467b97;
+    color: #ED1C24;
+    font-family: 'ITC Avant Garde Gothic Pro', sans-serif;
     font-weight: 800;
     font-size: 3em;
     }
 
 figcaption {
-    font-family: sans-serif;
+    font-family: 'Amandine', sans-serif;
     padding: 0.5em;
     color: #606060
 }
