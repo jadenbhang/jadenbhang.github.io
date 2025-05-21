@@ -1,0 +1,159 @@
+/*CSS document*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
+
+@import url('https://fonts.cdnfonts.com/css/itc-avant-garde-gothic-pro');
+@import url('https://fonts.cdnfonts.com/css/futura-pt');
+@import url('https://fonts.cdnfonts.com/css/amandine');
+
+div.container, div.home-container {
+    max-width: 80em;
+    margin: auto;
+}
+
+body {
+    font-family: 'Futura PT', sans-serif;
+    line-height: 1.6;
+    color: #020100;
+}
+
+header {
+    background-color: #ED1C24;
+    padding: 1em;
+    position: sticky;
+    top: 0;
+}
+
+header img {
+    height: 1.5em;
+    width: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    font-family: 'ITC Avant Garde Gothic Pro', sans-serif;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #0f0f0f;
+}
+
+/* Typography */
+h1 {
+    font-family: 'Amandine', sans-serif;
+    font-size: 3.5rem;
+    color: #ED1C24;
+    margin: 40px 0 20px;
+}
+
+h2 {
+    font-family: 'ITC Avant Garde Gothic Pro', sans-serif;
+    font-size: 2rem;
+    color: #1669B6;
+    margin: 40px 0 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+h3 {
+    font-family: 'ITC Avant Garde Gothic Pro', sans-serif;
+    font-size: 1.5rem;
+    color: #ED1C24;
+    margin: 30px 0 15px;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Author Class */
+.author {
+    font-family: 'ITC Avant Garde Gothic Pro', sans-serif;
+    font-size: 1.2rem;
+    color: #F9A03F;
+    margin-bottom: 40px;
+    display: block;
+}
+
+/* Magazine Name */
+.magazine-name {
+    font-family: 'Amandine', sans-serif;
+    font-size: 2.5rem;
+    color: #ED1C24;
+    margin: 30px 0 20px;
+    display: block;
+}
+
+/* Lists */
+ul {
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* Links */
+a {
+    color: #ED1C24;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #090909;
+}
+
+/* Footer */
+footer {
+    background-color: #020100;
+    color: white;
+    padding: 40px 0;
+    margin-top: 60px;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 50em) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 0.5em;
+        margin-top: 2em;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+}
