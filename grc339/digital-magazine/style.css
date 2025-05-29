@@ -260,6 +260,10 @@ section.option ul li {
 	flex: 1 0 18em;
 }
 
+section.personal-info ul {
+	padding: 0.5em;
+}
+
 section.subscribe {
     padding: 1em 0;
 }
