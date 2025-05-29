@@ -3,8 +3,18 @@
 html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
 
 div.container, div.home-container {
-    max-width: 50em;
+    max-width: 60em;
     margin: auto;
+}
+
+div.gallery {
+    max-width: 60em;
+    margin: 0 auto;
+}
+
+div.newsletter {
+    max-width: 60em;
+    margin: 0 auto;
 }
 
 header {
@@ -19,8 +29,61 @@ header img {
     padding-bottom: 0.5em;
 }
 
+h1.gallery {
+    padding-top: 1em;
+    font-family: 'ITC Avant Garde Gothic Pro', sans-serif;
+    font-size: 3em;
+    font-weight: 800;
+    color: #ED1C24;
+}
+
+h1.newsletter {
+    padding: 1em 1rem 0;
+    font-family: 'ITC Avant Garde Gothic Pro', sans-serif;
+    font-size: 3em;
+    font-weight: 800;
+    color: #ED1C24;
+}
+
 h2 {
     padding: .2em;
+}
+
+main.gallery {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: calc(66.6% + 3em);
+    padding-top: 1em;
+}
+
+figure.gallery {
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+nav.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.2em;
+    padding-bottom: 1em;
+}
+
+input:nth-of-type(1):checked ~ main figure:nth-of-type(1),
+input:nth-of-type(2):checked ~ main figure:nth-of-type(2),
+input:nth-of-type(3):checked ~ main figure:nth-of-type(3),
+input:nth-of-type(4):checked ~ main figure:nth-of-type(4),
+input:nth-of-type(5):checked ~ main figure:nth-of-type(5),
+input:nth-of-type(6):checked ~ main figure:nth-of-type(6),
+input:nth-of-type(7):checked ~ main figure:nth-of-type(7),
+input:nth-of-type(8):checked ~ main figure:nth-of-type(8){
+    opacity: 1;
+}
+
+div.gallery input {
+    display: none;
 }
 
 nav li {
@@ -85,6 +148,15 @@ section.tertiary h2 {
     border-top: 1px solid #0a3154;
 }
 
+section.newsletter h2 {
+    font-family: 'ITC Avant Garde Gothic Pro', sans-serif;
+    font-weight: 800;
+    font-size: 1.3em;
+    text-decoration: underline;
+    color: #f9a03f;
+    padding-bottom: 1em;
+}
+
 p {
     font-family: 'Futura PT', sans-serif;
     line-height: 1.3em;
@@ -125,6 +197,7 @@ footer {
     background-color: #ED1C24;
     width: 100%;
     box-sizing: border-box;
+    position: relative;
 }
 
 img {
@@ -132,7 +205,66 @@ img {
     display: block;
 }
 
-@media screen and (min-width: 50em) {
+main.form {
+    padding: 1em;
+    font-family: 'ITC Avant Garde Gothic Pro', sans-serif;
+	line-height: 1.4em;
+	color:#2f2f2f;
+	box-sizing: border-box;
+}
+
+div.newsletter h2 {
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    font-family: 'ITC Avant Garde Gothic Pro', sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #ED1C24;
+}
+
+main.form ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+main.form ul li {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+section.personal-info ul li {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+section.personal-info ul li input[type="text"],
+section ul li input[type="email"],
+section ul li input[type="tel"],
+section ul li select {
+	flex: 4 0 20em;
+	box-sizing: border-box;
+	margin-bottom: 1em;
+}
+
+section.personal-info ul li label {
+	flex: 0 0 8em;
+}
+
+section.option ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+section.option ul li {
+	margin: 0 1em 0 0;
+	flex: 1 0 18em;
+}
+
+section.subscribe {
+    padding: 1em 0;
+}
+
+@media screen and (min-width: 60em) {
     h1,
     h2,
     nav,
@@ -150,21 +282,10 @@ img {
     nav ul {
         display: flex;
         align-items: center;
-        float: none;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
     }
 
     nav li {
-        display: block;
         margin-right: 1em;
-    }
-
-    nav {
-        padding-bottom: 0em;
-        padding: 1em;
     }
 
     div.home-container {
@@ -260,3 +381,4 @@ img {
     }
 
 }
+
