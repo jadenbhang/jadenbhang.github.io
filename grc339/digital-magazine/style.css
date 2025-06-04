@@ -25,25 +25,30 @@ header {
 }
 
 header img {
-    width: 8em;
     padding-bottom: 0.5em;
 }
 
-h1.gallery {
+h2.gallery {
     padding-top: 1em;
-    font-family: 'ITC Avant Garde Gothic Pro', sans-serif;
-    font-size: 3em;
-    font-weight: 800;
+    font-family: itc-avant-garde-gothic-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5em;
     color: #ED1C24;
 }
 
-h1.newsletter {
+h2.newsletter {
     padding: 1em 1rem 0;
-    font-family: 'ITC Avant Garde Gothic Pro', sans-serif;
+    font-family: itc-avant-garde-gothic-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
     font-size: 3em;
-    font-weight: 800;
     color: #ED1C24;
 }
+
+h1 {  
+    width: 12em;  
+    }  
 
 h2 {
     padding: .2em;
@@ -95,13 +100,12 @@ nav ul {
     gap: 1em;
     margin: 0;
     list-style: none;
-    font-family: 'ITC Avant Garde Gothic Pro', sans-serif;
     color: #ffffff;
 }
 
 nav a {
     margin: 0 auto;
-    font-family: 'ITC Avant Garde Gothic Pro', sans-serif;
+    font-family: itc-avant-garde-gothic-pro, sans-serif;
     font-weight: 700;
     color: #ffffff;
     text-decoration: none;
@@ -124,24 +128,24 @@ a:hover {
 
 section.mainstory h2 {
     color: #ED1C24;
-    font-family: 'ITC Avant Garde Gothic Pro', sans-serif;
-    font-weight: 800;
+    font-family: itc-avant-garde-gothic-pro, sans-serif;
+    font-weight: 700;
     font-size: 3em;
     padding: 0.3em 0.5rem .1em;
     }
 
 section.secondary h2 {
     color: #ED1C24;
-    font-family: 'ITC Avant Garde Gothic Pro', sans-serif;
-    font-weight: 800;
+    font-family: itc-avant-garde-gothic-pro, sans-serif;
+    font-weight: 700;
     font-size: 2em;
     padding: 0.5em 0.5rem .1em;
 }
 
 section.tertiary h2 {
     color: #1669b6;
-    font-family: 'ITC Avant Garde Gothic Pro', sans-serif;
-    font-weight: 800;
+    font-family: itc-avant-garde-gothic-pro, sans-serif;
+    font-weight: 700;
     font-size: 1em;
     padding-top: 0.5em;
     margin: 0.5rem;
@@ -149,8 +153,8 @@ section.tertiary h2 {
 }
 
 section.newsletter h2 {
-    font-family: 'ITC Avant Garde Gothic Pro', sans-serif;
-    font-weight: 800;
+    font-family: itc-avant-garde-gothic-pro, sans-serif;
+    font-weight: 700;
     font-size: 1.3em;
     text-decoration: underline;
     color: #f9a03f;
@@ -158,7 +162,7 @@ section.newsletter h2 {
 }
 
 p {
-    font-family: 'Futura PT', sans-serif;
+    font-family: futura-pt, sans-serif;
     line-height: 1.3em;
     color: #000;
     padding: 0em 0.5em 1em;
@@ -171,13 +175,14 @@ article {
 
 h2.mainstory {
     color: #ED1C24;
-    font-family: 'ITC Avant Garde Gothic Pro', sans-serif;
-    font-weight: 800;
+    font-family: itc-avant-garde-gothic-pro, sans-serif;
+    font-weight: 700;
     font-size: 3em;
     }
 
 figcaption {
-    font-family: 'Amandine', sans-serif;
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
     padding: 0.5em;
     padding-bottom: 1em;
     color: #838383
@@ -207,7 +212,7 @@ img {
 
 main.form {
     padding: 1em;
-    font-family: 'ITC Avant Garde Gothic Pro', sans-serif;
+    font-family: itc-avant-garde-gothic-pro, sans-serif;
 	line-height: 1.4em;
 	color:#2f2f2f;
 	box-sizing: border-box;
@@ -216,9 +221,9 @@ main.form {
 div.newsletter h2 {
     padding-top: 1em;
     padding-bottom: 0.5em;
-    font-family: 'ITC Avant Garde Gothic Pro', sans-serif;
+    font-family: itc-avant-garde-gothic-pro, sans-serif;
     font-size: 1.5em;
-    font-weight: 600;
+    font-weight: 700;
     color: #ED1C24;
 }
 
@@ -386,3 +391,40 @@ section.subscribe {
 
 }
 
+@media screen and (prefers-color-scheme: dark) {
+    aside,
+    body {
+        background-color: #1c1c1c;
+    }
+
+    h1 {  
+        background-image: url("Slipstream(red).svg");  
+        background-repeat: no-repeat;  
+        background-size: contain;  
+    }  
+
+    h1 img {  
+        opacity: 0;
+    }      
+
+    header {
+        background-color: #151515;
+    }
+
+    p {
+        color: #e2e2e2;
+    }
+
+    nav a {
+        color: #1b1b1b;
+    }
+
+    main.form {
+        color: #e2e2e2;
+    }
+
+    a:hover {
+        color:#ED1C24;
+        text-decoration: none;
+    }
+}
