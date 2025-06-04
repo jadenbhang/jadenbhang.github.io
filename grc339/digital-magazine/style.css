@@ -32,23 +32,17 @@ h2.gallery {
     padding-top: 1em;
     font-family: itc-avant-garde-gothic-pro, sans-serif;
     font-weight: 700;
-    font-style: normal;
     font-size: 2.5em;
     color: #ED1C24;
 }
 
 h2.newsletter {
     padding: 1em 1rem 0;
-    font-family: itc-avant-garde-gothic-pro, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 3em;
-    color: #ED1C24;
 }
 
 h1 {  
     width: 12em;  
-    }  
+}  
 
 h2 {
     padding: .2em;
